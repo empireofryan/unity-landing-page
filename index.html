@@ -26,18 +26,20 @@
   <body>
 
     <!-- Navigation -->
-
-
+<div class="mobile">
+  <p>3DWebMall is not currently supported on mobile devices. Please try with a laptop or desktop.</p>
+</div>
+<div class="desktop">
     <!-- Masthead -->
     <header class="masthead text-white text-center">
       <div class="overlay" ></div>
       <div class="container">
         <div class="row">
           <div class="col-xl-9 mx-auto" style="margin-top:-50px;">
-            <img src="img/3dwebmall2.png">
+            <img src="img/3dwebmall7.png">
             <h1 class="mb-5">A three-dimensionsal virtual shopping experience in your browser</h1>
             <button class="launch">Launch 3DWebMall</button>
-            <p style="color:rgb(213, 213, 213);">(best viewed with Chrome)</p><br><br>
+            <p style="color:rgb(213, 213, 213);">(best viewed with Firefox or Chrome)</p><br><br>
           </div>
           <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
             <form>
@@ -108,7 +110,7 @@
           <div class="col-lg-6 text-white showcase-img" style="background-image: url('img/bg-showcase-2.jpg');"></div>
           <div class="col-lg-6 my-auto showcase-text">
               <h2>Nothing to Download</h2>
-              <p class="lead mb-0">3DWebMall runs in the browser, just wait about 30 seconds on a high-speed to load the environment.</p>
+              <p class="lead mb-0">3DWebMall runs in the browser, just wait about 30 seconds on a high-speed connection to load the environment.</p>
           </div>
         </div>
         <div class="row no-gutters">
@@ -221,6 +223,7 @@
         </div>
       </div>
     </footer>
+    </div>
 
     <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -240,6 +243,24 @@
     header.masthead {
       padding-top: 6rem;
       padding-bottom: 4rem;
+    }
+    @media only screen and (max-width: 400px) {
+      .desktop {
+        display:none;
+      }
+      .mobile {
+        visibility: visible;
+        padding:30px;
+        text-align:center;
+      }
+    }
+    @media only screen and (min-width: 401px) {
+      .desktop {
+        visibility: visible;
+      }
+      .mobile {
+        display:none;
+      }
     }
     </style>
   </body>
